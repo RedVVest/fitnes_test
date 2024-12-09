@@ -6,6 +6,7 @@ import ActivityCard from "./../components/trainingsScreen/ActivityCard";
 import ChatCard from "./../components/trainingsScreen/ChatCard";
 import ActivityCards from "../components/trainingsScreen/ActivityCards";
 import AddActivity from "../components/trainingsScreen/AddActivity";
+import ChatCards from "../components/trainingsScreen/ChatCards";
 
 const TrainingsScreen = () => {
   return (
@@ -29,23 +30,7 @@ const TrainingsScreen = () => {
 
         <AddActivity />
 
-        <Text className="text-textPrimary text-lg font-bold mt-8 mb-4">
-          Chats with coaches
-        </Text>
-        <ChatCard
-          name="Max"
-          message="When will you start running?"
-          activity={["Running"]}
-          time="13:03"
-          unread={10}
-        />
-        <ChatCard
-          name="Daniel"
-          message="Nah"
-          activity={["Gym", "Stretching"]}
-          time="13:03"
-          unread={0}
-        />
+        <ChatCards />
       </ScrollView>
     </View>
   );

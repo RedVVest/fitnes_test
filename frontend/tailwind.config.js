@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        orangeAccent: "#F2613F",
         darkBg: "#121212",
         cardBg: "#1E1E1E",
         chartDark: "rgba(235, 235, 235, 0.05)",
