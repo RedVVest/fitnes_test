@@ -5,6 +5,7 @@ import StatsCard from "./../components/trainingsScreen/StatsCard";
 import ActivityCard from "./../components/trainingsScreen/ActivityCard";
 import ChatCard from "./../components/trainingsScreen/ChatCard";
 import ActivityCards from "../components/trainingsScreen/ActivityCards";
+import AddActivity from "../components/trainingsScreen/AddActivity";
 
 const TrainingsScreen = () => {
   return (
@@ -26,14 +27,7 @@ const TrainingsScreen = () => {
 
         <ActivityCards />
 
-        <TouchableOpacity className="flex-row items-center mt-4">
-          <Text className="text-accent text-sm font-medium">
-            Add new activity
-          </Text>
-          <View className="bg-accent w-6 h-6 rounded-full items-center justify-center ml-2">
-            <Text className="text-white text-lg">+</Text>
-          </View>
-        </TouchableOpacity>
+        <AddActivity />
 
         <Text className="text-textPrimary text-lg font-bold mt-8 mb-4">
           Chats with coaches
