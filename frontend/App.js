@@ -1,21 +1,13 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import "./global.css";
+import TrainingsScreen from "./src/screens/TrainingsScreen";
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-red-500">
-      <Text>Open up App.js to start working on yfdour app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className="flex-1 bg-darkBg">
+      <TrainingsScreen />
+      <StatusBar style="light" />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
