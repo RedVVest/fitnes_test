@@ -4,6 +4,7 @@ import Header from "./../components/trainingsScreen/Header";
 import StatsCard from "./../components/trainingsScreen/StatsCard";
 import ActivityCard from "./../components/trainingsScreen/ActivityCard";
 import ChatCard from "./../components/trainingsScreen/ChatCard";
+import ActivityCards from "../components/trainingsScreen/ActivityCards";
 
 const TrainingsScreen = () => {
   return (
@@ -23,12 +24,8 @@ const TrainingsScreen = () => {
           />
         </View>
 
-        <Text className="text-textPrimary text-lg font-bold mb-4">
-          Today's Activities
-        </Text>
-        <ActivityCard activity="Gym" duration={85} />
-        <ActivityCard activity="Stretching" duration={20} />
-        <ActivityCard activity="Running" duration={60} />
+        <ActivityCards />
+
         <TouchableOpacity className="flex-row items-center mt-4">
           <Text className="text-accent text-sm font-medium">
             Add new activity

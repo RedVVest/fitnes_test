@@ -23,9 +23,7 @@ const StatsCard = ({ title, average, data }) => {
       <View
         className={`bg-cardBg mt-3 pt-[12] pb-[6] px-[12] w-[43vw] rounded-[25px]`}
       >
-        <Text className="text-textPrimary text-base font-bold">
-          Avg. {average}%
-        </Text>
+        <Text className="text-textPrimary text-base">Avg. {average}%</Text>
         <View className="flex-row justify-between mt-2 ">
           {data.map((value, index) => {
             return (

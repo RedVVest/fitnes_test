@@ -1,18 +1,28 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { View, Text, TouchableOpacity } from "react-native";
+import TrainingChevrone from "../../../assets/svgs/trainingsScreen/TrainingChevrone";
+import CircularProgress from "../../../assets/svgs/trainingsScreen/CircularProgress";
 
-const ActivityCard = ({ activity, duration }) => {
+const ActivityCard = ({ activity, planed_duration, done_duration }) => {
+  const progress = (done_duration / planed_duration) * 100;
   return (
-    <View className="bg-cardBg rounded-xl p-4 mx-2 mb-3 flex-row justify-between items-center">
-      <View>
-        <Text className="text-textPrimary text-base font-medium">
-          {activity}
+    <TouchableOpacity className="bg-cardBg  w-[43vw] rounded-[25px] p-5 mb-2">
+      <View className="flex-row items-center gap-1">
+        <CircularProgress
+          progress={progress}
+          radius={15}
+          strokeWidth={4}
+          color="#4A90E2"
+        />
+        <Text className="text-textSecondary text-sm">
+          {planed_duration} min
         </Text>
-        <Text className="text-textSecondary text-sm">{duration} min</Text>
       </View>
-      <Ionicons name="chevron-down" size={20} color="#A3A3A3" />
-    </View>
+      <View className="flex-row justify-between items-center mt-[9]">
+        <Text className="text-textPrimary text-base">{activity}</Text>
+        <TrainingChevrone />
+      </View>
+    </TouchableOpacity>
   );
 };
 
