@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
-import MessageReadSvg from "../../../assets/svgs/trainingsScreen/MessageReadSvg";
+import MessageReadSvg from "../../../../assets/svgs/trainingsScreen/MessageReadSvg";
 
 const ChatCard = ({ image, name, message, activity, time, unread }) => {
   return (

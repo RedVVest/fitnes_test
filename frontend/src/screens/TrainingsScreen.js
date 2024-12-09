@@ -2,11 +2,11 @@ import React from "react";
 import { View, ScrollView, Text, TouchableOpacity } from "react-native";
 import Header from "./../components/trainingsScreen/Header";
 import StatsCard from "./../components/trainingsScreen/StatsCard";
-import ActivityCard from "./../components/trainingsScreen/ActivityCard";
-import ChatCard from "./../components/trainingsScreen/ChatCard";
-import ActivityCards from "../components/trainingsScreen/ActivityCards";
+import ActivityCard from "../components/trainingsScreen/activity/ActivityCard";
+import ChatCard from "../components/trainingsScreen/chat/ChatCard";
+import ActivityCards from "../components/trainingsScreen/activity/ActivityCards";
 import AddActivity from "../components/trainingsScreen/AddActivity";
-import ChatCards from "../components/trainingsScreen/ChatCards";
+import ChatCards from "../components/trainingsScreen/chat/ChatCards";
 
 const TrainingsScreen = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 
 import ChatCard from "./ChatCard";
-import { chatData } from "../../constants/chatData";
+import { chatData } from "../../../constants/chatData";
 
 const ChatCards = () => {
   return (

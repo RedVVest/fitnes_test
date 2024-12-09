@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 
 import ActivityCard from "./ActivityCard";
-import TrainingActivitiesSvg from "../../../assets/svgs/trainingsScreen/TrainingActivitiesSvg";
+import TrainingActivitiesSvg from "../../../../assets/svgs/trainingsScreen/TrainingActivitiesSvg";
 
 const ActivityCards = () => {
   return (

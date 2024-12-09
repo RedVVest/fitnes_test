@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import TrainingChevrone from "../../../assets/svgs/trainingsScreen/TrainingChevrone";
-import CircularProgress from "../../../assets/svgs/trainingsScreen/CircularProgress";
+import TrainingChevrone from "../../../../assets/svgs/trainingsScreen/TrainingChevrone";
+import CircularProgress from "../../../../assets/svgs/trainingsScreen/CircularProgress";
 
 const ActivityCard = ({ activity, planed_duration, done_duration }) => {
   const progress = (done_duration / planed_duration) * 100;
