@@ -5,6 +5,7 @@ import CircularProgress from "../../../../assets/svgs/trainingsScreen/CircularPr
 
 const ActivityCard = ({ activity, planed_duration, done_duration }) => {
   const progress = (done_duration / planed_duration) * 100;
+
   return (
     <TouchableOpacity className="bg-cardBg  w-[43vw] rounded-[25px] p-5 mb-2">
       <View className="flex-row items-center gap-1">
@@ -12,7 +13,9 @@ const ActivityCard = ({ activity, planed_duration, done_duration }) => {
           progress={progress}
           radius={15}
           strokeWidth={4}
-          color="#4A90E2"
+          color={
+            progress > 80 ? "#374FD3" : progress > 30 ? "#56AAFB" : "#6CE4DD"
+          }
         />
         <Text className="text-textSecondary text-sm">
           {planed_duration} min
