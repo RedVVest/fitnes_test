@@ -2,10 +2,15 @@ import React from "react";
 import { View, Text } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-import TrainingCompletionSvg from "../../../assets/svgs/trainingsScreen/TrainingCompletionSvg";
-import TrainingSuccessSvg from "../../../assets/svgs/trainingsScreen/TrainingSuccessSvg";
+import TrainingCompletionSvg from "../../../../assets/svgs/trainingsScreen/TrainingCompletionSvg";
+import TrainingSuccessSvg from "../../../../assets/svgs/trainingsScreen/TrainingSuccessSvg";
 
-const StatsCard = ({ title, average, data }) => {
+const StatsCard = ({ title, data }) => {
+  const sum = data.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+  const average = Math.round(sum / data.length);
   return (
     <View className="mt-3">
       <View className="flex-row items-center gap-[7] ml-3">
